@@ -1,0 +1,32 @@
+{
+  "name": "bootstrap-pretty",
+  "packageManager": "yarn@3.2.4",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "description": "Pretty and flexible themes for Bootstrap 5.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bootstrap-pretty/bootstrap-pretty.git"
+  },
+  "author": "Bootstrap Pretty (https://bootstrappretty.dev)",
+  "bugs": {
+    "url": "https://github.com/bootstrap-pretty/bootstrap-pretty/issues"
+  },
+  "homepage": "https://github.com/bootstrap-pretty/bootstrap-pretty#readme",
+  "scripts": {
+    "bundle": "echo \"🚀 Cleaning dist folder...\" && del-cli --force ./dist && echo \"🚀 Generating minified JS and CSS...\" && (sass --load-path=node_modules --style=compressed --no-source-map ./scss/vscode:./dist/css & rollup --config) && echo \"🚀 Updating file names...\" && node ./bundle.js && echo \"🚀 Generating unminified CSS...\" && sass --load-path=node_modules --no-source-map ./scss/vscode:./dist/css && echo \"✨ Bundling complete!\""
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
+  "peerDependencies": {
+    "@popperjs/core": "*"
+  },
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "glob": "^8.0.3",
+    "rollup": "^3.2.5",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "1.55.0"
+  }
+}
