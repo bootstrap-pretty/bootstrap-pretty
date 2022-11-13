@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "stylelint-config-twbs-bootstrap"
+    ],
+    "rules": {
+        "declaration-no-important": null,
+        "indentation": 4,
+        "no-empty-source": null,
+        "selector-id-pattern": "^[a-z][a-zA-Z0-9]+$",
+        "selector-no-qualifying-type": null,
+        "scss/at-function-named-arguments": null,
+        "scss/selector-no-union-class-name": true
+    }
+}

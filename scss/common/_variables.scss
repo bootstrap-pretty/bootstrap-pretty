@@ -1,0 +1,160 @@
+// Config
+$enable-negative-margins:           true;
+$enable-cssgrid:                    true;
+$enable-dark-mode:                  true;
+$color-mode-type:                   data;
+
+// Globals - Variables that are shared and used with other variables
+$link-shade-percentage:        20%;
+$component-active-color:       var(--#{$prefix}primary-contrast);
+$font-family-code:             var(--#{$prefix}font-monospace);
+$line-height-base:             1.5;
+$font-weight-normal:           400;
+
+$font-size-base:               1rem;
+$font-size-sm:                 $font-size-base * .875;
+$font-size-lg:                 $font-size-base * 1.25;
+
+$border-radius:               .375rem;
+$border-radius-sm:            .25rem;
+$border-radius-lg:            .5rem;
+
+$input-btn-padding-x:         .75rem;
+$input-btn-font-size:         $font-size-base;
+$input-btn-line-height:       $line-height-base;
+
+$input-btn-padding-x-sm:      .5rem;
+$input-btn-font-size-sm:      $font-size-sm;
+
+$input-btn-padding-x-lg:      1rem;
+$input-btn-font-size-lg:      $font-size-lg;
+
+$input-btn-border-width:      var(--#{$prefix}border-width);
+
+// Body Colors
+$body-color:                        $gray-900;
+$body-color-dark:                   $gray-100;
+
+$body-bg:                           $gray-100;
+$body-bg-dark:                      $gray-900;
+
+$body-secondary-bg:                 $gray-300;
+$body-secondary-bg-dark:            $gray-700;
+
+$body-tertiary-bg:                  $gray-200;
+$body-tertiary-bg-dark:             $gray-800;
+
+// Extended Colors
+$primary-text:                      shade-color($primary, 20%);
+$primary-text-dark:                 tint-color($primary-dark, 20%);
+$primary-bg-subtle:                 tint-color($primary, 80%);
+$primary-bg-subtle-dark:            shade-color($primary-dark, 60%);
+$primary-border-subtle:             tint-color($primary, 60%);
+$primary-border-subtle-dark:        shade-color($primary-dark, 40%);
+$primary-contrast:                  color-contrast($primary);
+$primary-dark-contrast:             color-contrast($primary-dark);
+
+$secondary-text-dark:               $gray-500;
+$secondary-bg-subtle:               $gray-200;
+$secondary-border-subtle:           $gray-300;
+
+$success-text-dark:                 tint-color($success-dark, 20%);
+$success-bg-subtle-dark:            shade-color($success-dark, 60%);
+$success-border-subtle-dark:        shade-color($success-dark, 40%);
+$success-contrast:                  color-contrast($success);
+$success-dark-contrast:             color-contrast($success-dark);
+
+$info-text-dark:                    tint-color($info-dark, 20%);
+$info-bg-subtle-dark:               shade-color($info-dark, 60%);
+$info-border-subtle-dark:           shade-color($info-dark, 40%);
+
+$warning-text-dark:                 tint-color($warning-dark, 20%);
+$warning-bg-subtle-dark:            shade-color($warning-dark, 60%);
+$warning-border-subtle-dark:        shade-color($warning-dark, 40%);
+
+$danger-text-dark:                  tint-color($danger-dark, 20%);
+$danger-bg-subtle-dark:             shade-color($danger-dark, 60%);
+$danger-border-subtle-dark:         shade-color($danger-dark, 40%);
+$danger-contrast:                   color-contrast($danger);
+$danger-dark-contrast:              color-contrast($danger-dark);
+
+$light-bg-subtle:                   mix($gray-200, $white);
+$light-border-subtle:               $gray-300;
+
+// Type
+$mark-bg:                           var(--#{$prefix}yellow);
+
+// Accordion
+$accordion-button-active-color:      var(--#{$prefix}body-color);
+$accordion-button-icon-dark:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$body-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$body-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon-dark:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$body-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+// Borders
+$border-color:                      $gray-300;
+$border-color-dark:                 $gray-500;
+
+// Blockquote
+$blockquote-footer-color:           var(--#{$prefix}secondary-color);
+
+// Copy Code Snippet - Bootstrap Pretty Exclusive
+$copy-code-snippet-font-family:         $font-family-code !default;
+$copy-code-snippet-line-height:         $input-btn-line-height !default;
+$copy-code-snippet-font-weight:         $font-weight-normal !default;
+
+$copy-code-snippet-border-width:        $input-btn-border-width !default;
+$copy-code-snippet-border-color:        var(--#{$prefix}border-color) !default;
+
+$copy-code-snippet-padding-start:       $input-btn-padding-x !default;
+$copy-code-snippet-padding-start-sm:    $input-btn-padding-x-sm !default;
+$copy-code-snippet-padding-start-lg:    $input-btn-padding-x-lg !default;
+
+$copy-code-snippet-font-size:           $input-btn-font-size !default;
+$copy-code-snippet-font-size-sm:        $input-btn-font-size-sm !default;
+$copy-code-snippet-font-size-lg:        $input-btn-font-size-lg !default;
+
+$copy-code-snippet-border-radius:       $border-radius !default;
+$copy-code-snippet-border-radius-sm:    $border-radius-sm !default;
+$copy-code-snippet-border-radius-lg:    $border-radius-lg !default;
+
+$copy-code-snippet-bg:                  var(--#{$prefix}tertiary-bg) !default;
+$copy-code-snippet-color:               var(--#{$prefix}tertiary-bg-contrast) !default;
+
+// Dropdowns
+$dropdown-link-active-bg:               var(--#{$prefix}primary);
+
+// Forms
+$form-range-thumb-bg:                           var(--#{$prefix}primary);
+$form-range-thumb-active-bg:                    var(--#{$prefix}primary-shift);
+
+$form-check-input-checked-bg-color:             var(--#{$prefix}primary);
+$form-check-input-checked-bg-image:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary-contrast}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-input-checked-bg-image-dark:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary-dark-contrast}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+
+$form-check-radio-checked-bg-image:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$primary-contrast}'/></svg>");
+$form-check-radio-checked-bg-image-dark:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$primary-dark-contrast}'/></svg>");
+
+$form-check-input-indeterminate-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary-contrast}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
+$form-check-input-indeterminate-bg-image-dark:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary-dark-contrast}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
+
+$form-switch-focus-bg-image:                    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{tint-color($primary, 50%)}'/></svg>");
+$form-switch-focus-bg-image-dark:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{tint-color($primary-dark, 50%)}'/></svg>");
+
+$form-switch-checked-bg-image:                  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$primary-contrast}'/></svg>");
+$form-switch-checked-bg-image-dark:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$primary-dark-contrast}'/></svg>");
+
+$form-feedback-icon-valid-dark:                 url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$success-dark}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
+$form-feedback-icon-invalid-dark:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$danger-dark}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$danger-dark}' stroke='none'/></svg>");
+
+// Links
+$link-color-dark:                   $primary-dark;
+$link-hover-color-dark:             shift-color($primary-dark, $link-shade-percentage);
+
+// Navs
+$nav-pills-link-active-bg:          var(--#{$prefix}primary);
+
+// Pagination
+$pagination-active-bg:              var(--#{$prefix}primary);
+
+// Progress
+$progress-bar-bg:                   var(--#{$prefix}primary);

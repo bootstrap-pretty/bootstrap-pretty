@@ -1,0 +1,44 @@
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        --#{$prefix}btn-color: var(--#{$prefix}#{$color}-contrast);
+        --#{$prefix}btn-bg: var(--#{$prefix}#{$color});
+        --#{$prefix}btn-border-color: var(--#{$prefix}#{$color});
+        --#{$prefix}btn-hover-color: var(--#{$prefix}#{$color}-contrast);
+        --#{$prefix}btn-hover-bg: var(--#{$prefix}#{$color}-shift);
+        --#{$prefix}btn-hover-border-color: var(--#{$prefix}#{$color}-shift);
+        // --#{$prefix}btn-focus-shadow-rgb: #{to-rgb(mix($color, $border, 15%))};
+        --#{$prefix}btn-active-color: var(--#{$prefix}#{$color}-contrast);
+        --#{$prefix}btn-active-bg: var(--#{$prefix}#{$color}-shift);
+        --#{$prefix}btn-active-border-color: var(--#{$prefix}#{$color}-shift);
+        // --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+        --#{$prefix}btn-disabled-color: var(--#{$prefix}#{$color}-contrast);
+        --#{$prefix}btn-disabled-bg: var(--#{$prefix}#{$color});
+        --#{$prefix}btn-disabled-border-color: var(--#{$prefix}#{$color});
+    }
+
+    .btn-outline-#{$color} {
+        --#{$prefix}btn-color: var(--#{$prefix}#{$color});
+        --#{$prefix}btn-border-color: var(--#{$prefix}#{$color});
+        --#{$prefix}btn-hover-color: var(--#{$prefix}#{$color}-contrast);
+        --#{$prefix}btn-hover-bg: var(--#{$prefix}#{$color});
+        --#{$prefix}btn-hover-border-color: var(--#{$prefix}#{$color});
+        // --#{$prefix}btn-focus-shadow-rgb: #{to-rgb($color)};
+        --#{$prefix}btn-active-color: var(--#{$prefix}#{$color}-contrast);
+        --#{$prefix}btn-active-bg: var(--#{$prefix}#{$color});
+        --#{$prefix}btn-active-border-color: var(--#{$prefix}#{$color});
+        // --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+        --#{$prefix}btn-disabled-color: var(--#{$prefix}#{$color});
+        // --#{$prefix}btn-disabled-bg: transparent;
+        --#{$prefix}btn-disabled-border-color: var(--#{$prefix}#{$color});
+        // --#{$prefix}gradient: none;
+    }
+}
+
+.btn {
+    svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        vertical-align: -.125em;
+    }
+}

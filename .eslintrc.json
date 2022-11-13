@@ -1,0 +1,69 @@
+{
+    "root": true,
+    "extends": [
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:unicorn/recommended",
+        "xo",
+        "xo/browser"
+    ],
+    "rules": {
+        "arrow-body-style": "off",
+        "capitalized-comments": "off",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "MemberExpression": "off",
+                "SwitchCase": 1
+            }
+        ],
+        "max-params": [
+            "warn",
+            5
+        ],
+        "multiline-ternary": [
+            "error",
+            "always-multiline"
+        ],
+        "new-cap": [
+            "error",
+            {
+                "properties": false
+            }
+        ],
+        "no-console": "error",
+        "no-negated-condition": "off",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "operator-linebreak": [
+            "error",
+            "after"
+        ],
+        "prefer-template": "error",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "prefer-arrow-callback": ["error"],
+        "func-style": ["error", "expression"],
+        "arrow-parens": ["error", "as-needed"],
+        "unicorn/explicit-length-check": "off",
+        "unicorn/no-array-callback-reference": "off",
+        "unicorn/no-array-method-this-argument": "off",
+        "unicorn/no-null": "off",
+        "unicorn/no-typeof-undefined": "off",
+        "unicorn/no-unused-properties": "error",
+        "unicorn/prefer-array-flat": "off",
+        "unicorn/prefer-dom-node-dataset": "off",
+        "unicorn/prefer-spread": "off",
+        "unicorn/prevent-abbreviations": "off",
+        "unicorn/no-array-for-each": "off"
+    }
+}

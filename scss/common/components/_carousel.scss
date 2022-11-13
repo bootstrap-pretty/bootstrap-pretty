@@ -1,0 +1,18 @@
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        .carousel {
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                filter: $carousel-dark-control-icon-filter;
+            }
+
+            .carousel-indicators [data-bs-target] {
+                background-color: $carousel-dark-indicator-active-bg;
+            }
+
+            .carousel-caption {
+                color: $carousel-dark-caption-color;
+            }
+        }
+    }
+}

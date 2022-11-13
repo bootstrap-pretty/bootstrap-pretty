@@ -1,0 +1,107 @@
+// scss-docs-start colors-dark-map
+$colors-dark: (
+    "blue":       $blue-dark,
+    "indigo":     $indigo-dark,
+    "purple":     $purple-dark,
+    "pink":       $pink-dark,
+    "red":        $red-dark,
+    "orange":     $orange-dark,
+    "yellow":     $yellow-dark,
+    "green":      $green-dark,
+    "teal":       $teal-dark,
+    "cyan":       $cyan-dark,
+    "black":      $black,
+    "white":      $white,
+    "gray":       $gray-500,
+    "gray-dark":  $dark
+);
+// scss-docs-end colors-dark-map
+
+// scss-docs-start theme-colors-dark-map
+$theme-colors-dark: (
+    "primary":    $primary-dark,
+    "secondary":  $secondary-dark,
+    "success":    $success-dark,
+    "info":       $info-dark,
+    "warning":    $warning-dark,
+    "danger":     $danger-dark,
+    "light":      $light,
+    "dark":       $dark
+);
+// scss-docs-end theme-colors-dark-map
+
+$body-colors: (
+    "body-bg":       $body-bg,
+    "secondary-bg":  $body-secondary-bg,
+    "tertiary-bg":   $body-tertiary-bg
+);
+
+$body-colors-dark: (
+    "body-bg-dark":  $body-bg-dark,
+    "secondary-bg":  $body-secondary-bg-dark,
+    "tertiary-bg":   $body-tertiary-bg-dark
+);
+
+$extended-colors: (
+    "body-bg":                $body-bg,
+    "body-color":             $body-color,
+    "secondary-bg":           $body-secondary-bg,
+    "secondary-color":        $body-secondary-color,
+    "tertiary-bg":            $body-tertiary-bg,
+    "tertiary-color":         $body-tertiary-color,
+    "emphasis-color":         $emphasis-color,
+    "border-color":           $border-color,
+    "primary-bg-subtle":      $primary-bg-subtle,
+    "primary-border-subtle":  $primary-border-subtle,
+    "primary-text":           $primary-text,
+    "success-bg-subtle":      $success-bg-subtle,
+    "success-border-subtle":  $success-border-subtle,
+    "success-text":           $success-text,
+    "danger-bg-subtle":       $danger-bg-subtle,
+    "danger-border-subtle":   $danger-border-subtle,
+    "danger-text":            $danger-text,
+    "warning-bg-subtle":      $warning-bg-subtle,
+    "warning-border-subtle":  $warning-border-subtle,
+    "warning-text":           $warning-text,
+    "info-bg-subtle":         $info-bg-subtle,
+    "info-border-subtle":     $info-border-subtle,
+    "info-text":              $info-text,
+    "light-bg-subtle":        $light-bg-subtle,
+    "light-border-subtle":    $light-border-subtle,
+    "light-text":             $light-text,
+    "dark-bg-subtle":         $dark-bg-subtle,
+    "dark-border-subtle":     $dark-border-subtle,
+    "dark-text":              $dark-text
+);
+
+$extended-colors-dark: (
+    "body-bg":                $body-bg-dark,
+    "body-color":             $body-color-dark,
+    "secondary-bg":           $body-secondary-bg-dark,
+    "secondary-color":        $body-secondary-color-dark,
+    "tertiary-bg":            $body-tertiary-bg-dark,
+    "tertiary-color":         $body-tertiary-color-dark,
+    "emphasis-color":         $emphasis-color-dark,
+    "border-color":           $border-color-dark,
+    "primary-bg-subtle":      $primary-bg-subtle-dark,
+    "primary-border-subtle":  $primary-border-subtle-dark,
+    "primary-text":           $primary-text-dark,
+    "success-bg-subtle":      $success-bg-subtle-dark,
+    "success-border-subtle":  $success-border-subtle-dark,
+    "success-text":           $success-text-dark,
+    "danger-bg-subtle":       $danger-bg-subtle-dark,
+    "danger-border-subtle":   $danger-border-subtle-dark,
+    "danger-text":            $danger-text-dark,
+    "warning-bg-subtle":      $warning-bg-subtle-dark,
+    "warning-border-subtle":  $warning-border-subtle-dark,
+    "warning-text":           $warning-text-dark,
+    "info-bg-subtle":         $info-bg-subtle-dark,
+    "info-border-subtle":     $info-border-subtle-dark,
+    "info-text":              $info-text-dark,
+    "light-bg-subtle":        $light-bg-subtle-dark,
+    "light-border-subtle":    $light-border-subtle-dark,
+    "light-text":             $light-text-dark,
+    "dark-bg-subtle":         $dark-bg-subtle-dark,
+    "dark-border-subtle":     $dark-border-subtle-dark,
+    "dark-text":              $dark-text-dark,
+);

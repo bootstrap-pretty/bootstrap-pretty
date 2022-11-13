@@ -1,0 +1,23 @@
+@if $enable-dark-mode {
+    @include color-mode(light) {
+        .theme-light {
+            display: block;
+        }
+
+        .theme-dark {
+            display: none;
+        }
+    }
+}
+
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        .theme-light {
+            display: none;
+        }
+
+        .theme-dark {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.bp-copy-code-snippet {
+    --#{$prefix}copy-code-snippet-padding-start: #{$copy-code-snippet-padding-start};
+    --#{$prefix}copy-code-snippet-font-family: #{$copy-code-snippet-font-family};
+    @include rfs($copy-code-snippet-font-size, --#{$prefix}copy-code-snippet-font-size);
+    --#{$prefix}copy-code-snippet-font-weight: #{$copy-code-snippet-font-weight};
+    --#{$prefix}copy-code-snippet-line-height: #{$copy-code-snippet-line-height};
+    --#{$prefix}copy-code-snippet-color: #{$copy-code-snippet-color};
+    --#{$prefix}copy-code-snippet-bg: #{$copy-code-snippet-bg};
+    --#{$prefix}copy-code-snippet-border-width: #{$copy-code-snippet-border-width};
+    --#{$prefix}copy-code-snippet-border-color: #{$copy-code-snippet-border-color};
+    --#{$prefix}copy-code-snippet-border-radius: #{$copy-code-snippet-border-radius};
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-left: var(--#{$prefix}copy-code-snippet-padding-start);
+    white-space: nowrap;
+    background: var(--#{$prefix}copy-code-snippet-bg);
+    @include border-radius(var(--#{$prefix}copy-code-snippet-border-radius));
+    border: var(--#{$prefix}copy-code-snippet-border-width) solid var(--#{$prefix}copy-code-snippet-border-color);
+
+    &.bp-copy-code-snippet-lg {
+        padding-left: $input-btn-padding-x-lg;
+        @include border-radius($copy-code-snippet-border-radius-lg);
+
+        .bp-copy-code-snippet-text {
+            @include font-size($copy-code-snippet-font-size-lg);
+        }
+    }
+
+    &.bp-copy-code-snippet-sm {
+        padding-left: $input-btn-padding-x-sm;
+        @include border-radius($copy-code-snippet-border-radius-sm);
+
+        .bp-copy-code-snippet-text {
+            @include font-size($copy-code-snippet-font-size-sm);
+        }
+    }
+
+    .bp-copy-code-snippet-text {
+        overflow: scroll;
+        font-family: var(--#{$prefix}copy-code-snippet-font-family);
+        font-weight: var(--#{$prefix}copy-code-snippet-font-weight);
+        line-height: var(--#{$prefix}copy-code-snippet-line-height);
+        color: var(--#{$prefix}copy-code-snippet-color);
+        white-space: nowrap;
+        @include font-size(var(--#{$prefix}copy-code-snippet-font-size));
+    }
+
+    .bp-copy-code-snippet-trigger {
+        --#{$prefix}btn-border-width: 0;
+        --#{$prefix}btn-color: var(--#{$prefix}body-color);
+        --#{$prefix}btn-hover-color: var(--#{$prefix}primary);
+        --#{$prefix}btn-focus-shadow-rgb: transparent;
+        --#{$prefix}btn-active-color: var(--#{$prefix}primary);
+        --#{$prefix}btn-active-border-color: transparent;
+        --#{$prefix}btn-active-shadow: none;
+        --#{$prefix}btn-disabled-border-color: transparent;
+    }
+}
