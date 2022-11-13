@@ -1,0 +1,15 @@
+@each $state in map-keys($theme-colors) {
+    .table-#{$state} {
+        @if $state != "light" and $state != "dark" {
+            --#{$prefix}table-color: var(--#{$prefix}body-color);
+            --#{$prefix}table-bg: var(--#{$prefix}#{$state}-bg-subtle);
+            --#{$prefix}table-border-color: var(--#{$prefix}#{$state}-border-subtle);
+            --#{$prefix}table-striped-bg: var(--#{$prefix}#{$state}-border-subtle);
+            --#{$prefix}table-striped-color: var(--#{$prefix}body-color);
+            --#{$prefix}table-active-bg: var(--#{$prefix}#{$state});
+            --#{$prefix}table-active-color: var(--#{$prefix}#{$state}-contrast);
+            --#{$prefix}table-hover-bg: var(--#{$prefix}#{$state}-border-subtle);
+            --#{$prefix}table-hover-color: var(--#{$prefix}emphasis-color);
+        }
+    }
+}

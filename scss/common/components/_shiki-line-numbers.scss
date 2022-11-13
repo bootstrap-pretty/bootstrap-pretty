@@ -1,0 +1,25 @@
+// https://github.com/shikijs/shiki/issues/3#issuecomment-830564854
+pre {
+    padding: .5rem 0;
+    border: 1px solid var(--#{$prefix}border-color-translucent);
+    border-radius: $border-radius;
+
+    code {
+        counter-reset: step;
+        counter-increment: step calc(var(--start, 1) - 1);
+
+        .line::before {
+            display: inline-block;
+            width: 2rem;
+            margin-right: 1rem;
+            color: $shiki-line-numbers;
+            text-align: right;
+            content: counter(step);
+            counter-increment: step;
+        }
+    }
+}
+
+[data-bp-shiki="css-variables"] pre code .line::before {
+    color: var(--shiki-token-comment);
+}

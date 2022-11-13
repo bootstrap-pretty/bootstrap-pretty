@@ -1,0 +1,7 @@
+@import "./mixins/banner";
+@include bsBanner("");
+
+$prefix:                bs-;
+$custom-prefix:         bp-;
+$min-contrast-ratio:    4.5;
+$shift-amount:          15%;

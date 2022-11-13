@@ -1,0 +1,80 @@
+// Color system
+$color-contrast-dark:  #000;
+$color-contrast-light: #fff;
+
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #eaeaec;
+$gray-200: #d4d5d8;
+$gray-300: #bfc0c5;
+$gray-400: #a9abb2;
+$gray-500: #696c78;
+$gray-600: #545765;
+$gray-700: #3e4251;
+$gray-800: #292d3e; // syntax highlight background
+$gray-900: #212432;
+$black:    #000;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue:    #2979ff;
+$indigo:  #5c6bc0;
+$purple:  #ab47bc;
+$pink:    #ff4081;
+$red:     #f44336;
+$orange:  #ff7042;
+$yellow:  #ffa000;
+$green:   #388e3c;
+$teal:    #80cbc4;
+$cyan:    #00bcd4;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-900;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start color-variables-dark
+$blue-dark:    #82aaff;
+$indigo-dark:  #c792ea;
+$purple-dark:  #bb80b3;
+$pink-dark:    #ff9cac;
+$red-dark:     #f07178;
+$orange-dark:  #f78c6c;
+$yellow-dark:  #ffcb6b;
+$green-dark:   #c3e88d;
+$teal-dark:    #80cbc4;
+$cyan-dark:    #89ddff;
+// scss-docs-end color-variables-dark
+
+// scss-docs-start theme-color-dark-variables
+$primary-dark:       $blue-dark;
+$secondary-dark:     $gray-500;
+$success-dark:       $green-dark;
+$info-dark:          $cyan-dark;
+$warning-dark:       $yellow-dark;
+$danger-dark:        $red-dark;
+// scss-docs-end theme-color-dark-variables
+
+// Only applied if using a defined Shiki theme
+$shiki-line-numbers:                #6272a4;
+
+// Only applied if using the "css-variables" Shiki theme
+$shiki-color-text:                  var(--#{$prefix}secondary-color);
+$shiki-color-background:            var(--#{$prefix}tertiary-bg);
+$shiki-token-constant:              var(--#{$prefix}blue);
+$shiki-token-string:                var(--#{$prefix}purple);
+$shiki-token-comment:               var(--#{$prefix}secondary-color);
+$shiki-token-keyword:               var(--#{$prefix}green);
+$shiki-token-parameter:             var(--#{$prefix}cyan);
+$shiki-token-function:              var(--#{$prefix}yellow);
+$shiki-token-string-expression:     var(--#{$prefix}orange);
+$shiki-token-punctuation:           var(--#{$prefix}cyan);
+$shiki-token-link:                  var(--#{$prefix}primary);
+$shiki-token-line-numbers:          var(--#{$prefix}secondary-color);

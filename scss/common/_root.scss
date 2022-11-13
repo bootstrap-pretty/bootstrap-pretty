@@ -1,0 +1,76 @@
+:root,
+:root[data-bs-theme="light"] {
+    @each $color, $value in $body-colors {
+        // Body colors contrast
+        --#{$prefix}#{$color}-contrast: #{color-contrast($value, $color-contrast-dark: $body-color-dark, $color-contrast-light: $body-color)};
+    }
+
+    @each $color, $value in $colors {
+        // All colors contrast
+        --#{$prefix}#{$color}-contrast: #{color-contrast($value)};
+    }
+
+    @each $color, $value in $theme-colors {
+        // Theme colors contrast
+        --#{$prefix}#{$color}-contrast: #{color-contrast($value)};
+
+        // Theme colors shift
+        --#{$prefix}#{$color}-shift: #{shift-color($value, $shift-amount)};
+    }
+}
+
+@if $enable-dark-mode {
+    :root[data-bs-theme="dark"] {
+        @each $color, $value in $body-colors-dark {
+            // Body colors dark contrast
+            --#{$prefix}#{$color}-contrast: #{color-contrast($value, $color-contrast-dark: $body-color-dark, $color-contrast-light: $body-color)};
+        }
+
+        @each $color, $value in $colors-dark {
+            // All colors dark
+            --#{$prefix}#{$color}: #{$value};
+
+            // All colors dark contrast
+            --#{$prefix}#{$color}-contrast: #{color-contrast($value)};
+        }
+
+        @each $color, $value in $theme-colors-dark {
+            // Theme colors dark
+            --#{$prefix}#{$color}: #{$value};
+
+            // Theme colors dark contrast
+            --#{$prefix}#{$color}-contrast: #{color-contrast($value)};
+
+            // Theme colors dark shift
+            --#{$prefix}#{$color}-shift: #{shift-color($value, $shift-amount)};
+
+            // Theme colors rgb
+            --#{$prefix}#{$color}-rgb: #{to-rgb($value)};
+        }
+    }
+}
+
+[data-bp-shiki="css-variables"] {
+    --shiki-color-text: #{$shiki-color-text};
+    --astro-code-color-text: #{$shiki-color-text};
+    --shiki-color-background: #{$shiki-color-background};
+    --astro-code-color-background: #{$shiki-color-background};
+    --shiki-token-constant: #{$shiki-token-constant};
+    --astro-code-token-constant: #{$shiki-token-constant};
+    --shiki-token-string: #{$shiki-token-string};
+    --astro-code-token-string: #{$shiki-token-string};
+    --shiki-token-comment: #{$shiki-token-comment}; // fix to be pailer than this
+    --astro-code-token-comment: #{$shiki-token-comment};
+    --shiki-token-keyword: #{$shiki-token-keyword};
+    --astro-code-token-keyword: #{$shiki-token-keyword};
+    --shiki-token-parameter: #{$shiki-token-parameter};
+    --astro-code-token-parameter: #{$shiki-token-parameter};
+    --shiki-token-function: #{$shiki-token-function};
+    --astro-code-token-function: #{$shiki-token-function};
+    --shiki-token-string-expression: #{$shiki-token-string-expression};
+    --astro-code-token-string-expression: #{$shiki-token-string-expression};
+    --shiki-token-punctuation: #{$shiki-token-punctuation};
+    --astro-code-token-punctuation: #{$shiki-token-punctuation};
+    --shiki-token-link: #{$shiki-token-link};
+    --astro-code-token-link: #{$shiki-token-link};
+}

@@ -1,0 +1,112 @@
+@each $color, $value in $theme-colors {
+    .text-bg-#{$color} {
+        color: var(--#{$prefix}#{$color}-contrast) !important;
+        background-color: var(--#{$prefix}#{$color}) !important;
+
+        h6,
+        .h6,
+        h5,
+        .h5,
+        h4,
+        .h4,
+        h3,
+        .h3,
+        h2,
+        .h2,
+        h1,
+        .h1 {
+            color: var(--#{$prefix}#{$color}-contrast) !important;
+        }
+    }
+}
+
+@each $color, $value in $colors {
+    .text-bg-#{$color} {
+        color: var(--#{$prefix}#{$color}-contrast) !important;
+        background-color: var(--#{$prefix}#{$color}) !important;
+
+        h6,
+        .h6,
+        h5,
+        .h5,
+        h4,
+        .h4,
+        h3,
+        .h3,
+        h2,
+        .h2,
+        h1,
+        .h1 {
+            color: var(--#{$prefix}#{$color}-contrast) !important;
+        }
+    }
+}
+
+@each $color, $value in $extended-colors {
+    .text-bg-#{$color} {
+        color: color-contrast($value) !important;
+        background-color: var(--#{$prefix}#{$color}) !important;
+
+        h6,
+        .h6,
+        h5,
+        .h5,
+        h4,
+        .h4,
+        h3,
+        .h3,
+        h2,
+        .h2,
+        h1,
+        .h1 {
+            color: color-contrast($value) !important;
+        }
+    }
+}
+
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        @each $color, $value in $extended-colors-dark {
+            .text-bg-#{$color} {
+                color: color-contrast($value) !important;
+
+                h6,
+                .h6,
+                h5,
+                .h5,
+                h4,
+                .h4,
+                h3,
+                .h3,
+                h2,
+                .h2,
+                h1,
+                .h1 {
+                    color: color-contrast($value) !important;
+                }
+            }
+        }
+    }
+}
+
+@each $color, $value in $body-colors {
+    .text-bg-#{$color} {
+        color: var(--#{$prefix}#{$color}-contrast) !important;
+        background-color: var(--#{$prefix}#{$color}) !important;
+
+        h6,
+        .h6,
+        h5,
+        .h5,
+        h4,
+        .h4,
+        h3,
+        .h3,
+        h2,
+        .h2,
+        h1,
+        .h1 {
+            color: var(--#{$prefix}#{$color}-contrast) !important;
+        }
+    }
+}

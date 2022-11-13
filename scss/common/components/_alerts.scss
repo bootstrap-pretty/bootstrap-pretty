@@ -1,0 +1,6 @@
+@each $state in map-keys($theme-colors) {
+    .alert-#{$state} {
+        --#{$prefix}alert-color: var(--#{$prefix}body-color);
+        --#{$prefix}alert-link-color: var(--#{$prefix}body-color);
+    }
+}

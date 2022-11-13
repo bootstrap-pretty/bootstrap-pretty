@@ -13,6 +13,7 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
           scope: '@st3phhays'
+      - run: yarn set version classic
       - run: yarn
       - run: yarn publish --access public
         env:

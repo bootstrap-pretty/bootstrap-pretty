@@ -1,0 +1,32 @@
+---
+const Icon = Astro.props.iconComponent;
+---
+
+<div class="dropdown">
+    <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bp-theme-dropdown" type="button" aria-expanded="false" data-bs-toggle="dropdown" title="Toggle Theme">
+        <svg class="theme-icon-active d-none"></svg>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bp-theme-dropdown" style="--bs-dropdown-min-width: 8rem;">
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                <Icon class="w-20-px" name="bi:cloud-sun" />
+                <span class="ms-2">Light</span>
+                <Icon class="w-20-px ms-auto d-none" name="bi:check2" />
+            </button>
+        </li>
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark">
+                <Icon class="w-20-px" name="bi:moon-stars" />
+                <span class="ms-2">Dark</span>
+                <Icon class="w-20-px ms-auto d-none" name="bi:check2" />
+            </button>
+        </li>
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+                <Icon class="w-20-px" name="bi:circle-half" />
+                <span class="ms-2">Auto</span>
+                <Icon class="w-20-px ms-auto d-none" name="bi:check2" />
+            </button>
+        </li>
+    </ul>
+</div>
