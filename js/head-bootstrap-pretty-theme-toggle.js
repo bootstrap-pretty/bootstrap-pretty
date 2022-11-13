@@ -1,0 +1,12 @@
+(() => {
+    const html = document.documentElement;
+    const themeStorage = localStorage.getItem('theme');
+
+    if (themeStorage) {
+        html.setAttribute('data-user-color-scheme', themeStorage);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        html.setAttribute('data-user-color-scheme', 'dark');
+    } else {
+        html.setAttribute('data-user-color-scheme', 'light');
+    }
+})();

@@ -1,0 +1,52 @@
+:root[data-user-color-scheme="light"],
+:root[data-user-color-scheme="dark"] {
+    --#{$prefix}body-bg:                    var(--#{$custom-prefix}11);
+    --#{$prefix}body-color:                 var(--#{$custom-prefix}9);
+    --#{$custom-prefix}shiki-comments:      #{$shiki-comments};
+}
+
+:root[data-user-color-scheme="light"] {
+    // Custom base colors based on Bootstrap grayscale
+    --#{$custom-prefix}0:               var(--#{$prefix}white);
+    --#{$custom-prefix}1:               var(--#{$prefix}gray-100);
+    --#{$custom-prefix}2:               var(--#{$prefix}gray-200);
+    --#{$custom-prefix}3:               var(--#{$prefix}gray-300);
+    --#{$custom-prefix}4:               var(--#{$prefix}gray-400);
+    --#{$custom-prefix}5:               var(--#{$prefix}gray-500);
+    --#{$custom-prefix}6:               var(--#{$prefix}gray-600);
+    --#{$custom-prefix}7:               var(--#{$prefix}gray-700);
+    --#{$custom-prefix}8:               var(--#{$prefix}gray-800);
+    --#{$custom-prefix}9:               var(--#{$prefix}gray-900); // body color
+    --#{$custom-prefix}10:              var(--#{$prefix}black);
+
+    // Custom base colors based on theme
+    --#{$custom-prefix}11:              var(--#{$prefix}gray-100); // body background
+    --#{$custom-prefix}12:              var(--#{$prefix}gray-200); // elevation 1
+    --#{$custom-prefix}13:              var(--#{$prefix}gray-500); // muted
+    --#{$custom-prefix}14:              var(--#{$prefix}gray-300); // hr, borders
+    --#{$custom-prefix}15:              var(--#{$prefix}gray-300); // elevation 2
+    --#{$custom-prefix}16:              #{to-rgb($gray-100)}; // body background rgb
+}
+
+:root[data-user-color-scheme="dark"] {
+    // Custom base colors based on Bootstrap grayscale
+    --#{$custom-prefix}0:               var(--#{$prefix}black);
+    --#{$custom-prefix}1:               var(--#{$prefix}gray-900);
+    --#{$custom-prefix}2:               var(--#{$prefix}gray-800);
+    --#{$custom-prefix}3:               var(--#{$prefix}gray-700);
+    --#{$custom-prefix}4:               var(--#{$prefix}gray-600);
+    --#{$custom-prefix}5:               var(--#{$prefix}gray-500);
+    --#{$custom-prefix}6:               var(--#{$prefix}gray-400);
+    --#{$custom-prefix}7:               var(--#{$prefix}gray-300);
+    --#{$custom-prefix}8:               var(--#{$prefix}gray-200);
+    --#{$custom-prefix}9:               var(--#{$prefix}gray-100); // body color
+    --#{$custom-prefix}10:              var(--#{$prefix}white);
+
+    // Custom base colors based on theme
+    --#{$custom-prefix}11:              var(--#{$prefix}gray-800); // body background
+    --#{$custom-prefix}12:              var(--#{$prefix}gray-700); // elevation 1
+    --#{$custom-prefix}13:              var(--#{$prefix}gray-300); // muted
+    --#{$custom-prefix}14:              var(--#{$prefix}gray-600); // hr, borders
+    --#{$custom-prefix}15:              var(--#{$prefix}gray-600); // elevation 2
+    --#{$custom-prefix}16:              #{to-rgb($gray-800)}; // body background rgb
+}

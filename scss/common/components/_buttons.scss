@@ -1,0 +1,5 @@
+[data-user-color-scheme="dark"] {
+    .btn-close {
+        filter: $filter-invert;
+    }
+}

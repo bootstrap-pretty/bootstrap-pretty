@@ -1,0 +1,13 @@
+$i: 10;
+$step: 10;
+@while $i < 100 + $step {
+    .w-#{$i}-px {
+        width: #{$i}px;
+    }
+
+    .h-#{$i}-px {
+        height: #{$i}px;
+    }
+
+    $i: $i + $step;
+}

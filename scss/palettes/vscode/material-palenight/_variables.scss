@@ -1,0 +1,160 @@
+// Color system
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #e9eaeb;
+$gray-200: #d4d5d8;
+$gray-300: #a9abb1;
+$gray-400: #696c77;
+$gray-500: #535664;
+$gray-600: #3e4251;
+$gray-700: #292D3E; // shiki background
+$gray-800: #202431;
+$gray-900: #14161f;
+$black:    #000;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue:    #82aaff;
+$indigo:  #c792ea;
+$purple:  #bb80b3;
+$pink:    #ff9cac;
+$red:     #f07178;
+$orange:  #f78c6c;
+$yellow:  #FFCB6B;
+$green:   #c3e88d;
+$teal:    #80CBC4;
+$cyan:    #89ddff;
+// scss-docs-end color-variables
+
+$primary:   $blue;
+
+// Prefix for :root CSS variables
+$prefix:                            bs-;
+$custom-prefix:                     bp-;
+
+// Custom Sass
+$shiki-comments:                    #676E95;
+$form-select-indicator-dark:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$gray-100}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+$filter-invert:                     invert(1) grayscale(100%) brightness(200%);
+
+// Main
+$hr-color:                          var(--#{$custom-prefix}14);
+$text-muted:                        var(--#{$custom-prefix}13);
+$component-active-color:            var(--#{$prefix}gray-900);
+
+// Borders
+$border-color:                      var(--#{$custom-prefix}14);
+$border-color-translucent:          var(--#{$custom-prefix}14);
+
+// Accordion
+$accordion-color:                   var(--#{$custom-prefix}9);
+$accordion-bg:                      var(--#{$custom-prefix}11);
+$accordion-border-color:            $border-color;
+$accordion-button-active-bg:        rgba($primary, .3);
+$accordion-button-active-color:     var(--#{$custom-prefix}9);
+$accordion-icon-color:              var(--#{$prefix}gray-900);
+$accordion-icon-active-color:       var(--#{$prefix}gray-900);
+
+// Alerts
+$alert-bg-scale:                    .3;
+
+// Breadcrumbs
+$breadcrumb-divider-color:          var(--#{$custom-prefix}9);
+$breadcrumb-active-color:           var(--#{$custom-prefix}13);
+
+// Buttons
+$btn-link-color:                    var(--#{$custom-prefix}13);
+$btn-link-hover-color:              var(--#{$custom-prefix}9);
+$btn-link-disabled-color:           var(--#{$custom-prefix}13);
+
+// Dropdowns
+$dropdown-color:                    var(--#{$custom-prefix}9);
+$dropdown-bg:                       var(--#{$custom-prefix}11);
+
+$dropdown-link-color:               var(--#{$custom-prefix}9);
+$dropdown-link-hover-color:         var(--#{$custom-prefix}9);
+$dropdown-link-hover-bg:            var(--#{$custom-prefix}12);
+$dropdown-link-disabled-color:      var(--#{$custom-prefix}13);
+$dropdown-header-color:             var(--#{$custom-prefix}9);
+
+// Cards
+$card-bg:                           var(--#{$custom-prefix}11);
+
+// List Group
+$list-group-color:                  var(--#{$custom-prefix}9);
+$list-group-bg:                     var(--#{$custom-prefix}11);
+$list-group-border-color:           $border-color;
+$list-group-item-bg-scale:          .3;
+$list-group-hover-bg:               var(--#{$custom-prefix}12);
+$list-group-active-color:           var(--#{$prefix}gray-900);
+$list-group-disabled-color:         var(--#{$custom-prefix}13);
+$list-group-action-color:           var(--#{$custom-prefix}9);
+$list-group-action-active-color:    var(--#{$custom-prefix}9);
+$list-group-action-active-bg:       var(--#{$custom-prefix}12);
+
+// Modal
+$modal-content-bg:                  var(--#{$custom-prefix}11);
+
+// Navs
+$nav-link-disabled-color:           var(--#{$custom-prefix}13);
+$nav-tabs-border-color:             $border-color;
+$nav-tabs-link-hover-border-color:  $border-color;
+$nav-tabs-link-active-color:        var(--#{$custom-prefix}9);
+$nav-tabs-link-active-bg:           var(--#{$custom-prefix}11);
+$nav-tabs-link-active-border-color: $border-color $border-color $nav-tabs-link-active-bg;
+
+// Navbar
+$navbar-light-color:                var(--#{$custom-prefix}13);
+$navbar-light-hover-color:          var(--#{$custom-prefix}9);
+$navbar-light-disabled-color:       var(--#{$custom-prefix}13);
+$navbar-light-active-color:         var(--#{$custom-prefix}9);
+
+// Pagination
+$pagination-bg:                     var(--#{$custom-prefix}11);
+$pagination-border-color:           $border-color;
+$pagination-focus-bg:               var(--#{$custom-prefix}12);
+$pagination-hover-bg:               var(--#{$custom-prefix}12);
+$pagination-hover-border-color:     $border-color;
+$pagination-disabled-color:         var(--#{$custom-prefix}13);
+$pagination-disabled-bg:            var(--#{$custom-prefix}11);
+$pagination-disabled-border-color:  $border-color;
+
+// Popovers
+$popover-bg:                        var(--#{$custom-prefix}11);
+$popover-header-bg:                 var(--#{$custom-prefix}11);
+$popover-header-color:              var(--#{$custom-prefix}9);
+$popover-body-color:                var(--#{$custom-prefix}9);
+
+// Progress
+$progress-bg:                       var(--#{$custom-prefix}12);
+
+// Toast
+$toast-background-color:            rgba(var(--#{$custom-prefix}16), .85);
+$toast-header-color:                var(--#{$custom-prefix}9);
+$toast-header-background-color:     rgba(var(--#{$custom-prefix}16), .85);
+$toast-header-border-color:         $border-color;
+
+// Tooltip
+$tooltip-bg:                        var(--#{$prefix}gray-900);
+
+// Forms
+$input-bg:                          var(--#{$custom-prefix}11);
+$input-disabled-bg:                 var(--#{$custom-prefix}12);
+
+$input-color:                       var(--#{$custom-prefix}9);
+$input-border-color:                $border-color;
+
+$input-placeholder-color:           var(--#{$custom-prefix}13);
+$input-plaintext-color:             var(--#{$custom-prefix}9);
+
+$input-group-addon-color:           var(--#{$custom-prefix}9);
+$input-group-addon-bg:              var(--#{$custom-prefix}12);
+
+$form-file-button-color:            var(--#{$custom-prefix}9);
+$form-file-button-bg:               $input-group-addon-bg;
+$form-file-button-hover-bg:         var(--#{$custom-prefix}15);
+
+$form-check-input-border:           1px solid $border-color;
+
+$form-select-disabled-color:        var(--#{$custom-prefix}13);
+$form-select-disabled-bg:           var(--#{$custom-prefix}12);

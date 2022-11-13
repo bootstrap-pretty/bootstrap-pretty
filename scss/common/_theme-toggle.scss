@@ -1,0 +1,19 @@
+[data-user-color-scheme="light"] {
+    .theme-light {
+        display: block;
+    }
+
+    .theme-dark {
+        display: none;
+    }
+}
+
+[data-user-color-scheme="dark"] {
+    .theme-light {
+        display: none;
+    }
+
+    .theme-dark {
+        display: block;
+    }
+}

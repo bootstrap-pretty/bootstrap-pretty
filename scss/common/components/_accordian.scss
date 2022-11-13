@@ -1,0 +1,5 @@
+[data-user-color-scheme="dark"] {
+    .accordion-button::after {
+        filter: $filter-invert;
+    }
+}

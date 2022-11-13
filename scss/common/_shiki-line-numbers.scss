@@ -1,0 +1,21 @@
+.astro-code {
+    padding: .5rem 0;
+    
+    code {
+        // Begin Line Numbers
+        // https://github.com/shikijs/shiki/issues/3#issuecomment-830564854
+        counter-reset: step;
+	    counter-increment: step calc(var(--start, 1) - 1);
+
+        .line::before {
+            content: counter(step);
+            counter-increment: step;
+            width: 2rem;
+            margin-right: 1rem;
+            display: inline-block;
+            text-align: right;
+            color: var(--bp-shiki-comments);
+        }
+        // End Line Numbers
+    }
+}
