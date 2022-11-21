@@ -1,0 +1,12 @@
+:root[data-bs-theme="light"],
+:root[data-bs-theme="dark"] {
+    --#{$custom-prefix}shiki-line-numbers:      #{$shiki-line-numbers};
+}
+
+:root[data-bs-theme="light"] {
+   
+}
+
+:root[data-bs-theme="dark"] {
+    
+}

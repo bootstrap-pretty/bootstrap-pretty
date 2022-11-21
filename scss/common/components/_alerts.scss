@@ -4,12 +4,12 @@
 
 @each $state, $value in $theme-colors {
     .alert-#{$state} {
-        --#{$prefix}alert-bg: #{rgba($value, $alert-bg-scale)};
-        --#{$prefix}alert-border-color: #{$value};
+        --#{$prefix}alert-bg: #{rgba(var(--#{$prefix}#{$state}-rgb), $alert-bg-scale)};
+        --#{$prefix}alert-border-color: var(--#{$prefix}#{$state});
         --#{$prefix}alert-border: #{$alert-border-width} solid var(--#{$prefix}alert-border-color);
 
         .alert-link {
-            color: var(--#{$custom-prefix}9);
+            color: var(--#{$prefix}body-color);
         }
     }
 }

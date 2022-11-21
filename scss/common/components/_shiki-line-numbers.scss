@@ -1,9 +1,10 @@
-.astro-code {
+// https://github.com/shikijs/shiki/issues/3#issuecomment-830564854
+pre {
     padding: .5rem 0;
+    border: 1px solid var(--#{$custom-prefix}base03);
+    border-radius: $border-radius;
     
     code {
-        // Begin Line Numbers
-        // https://github.com/shikijs/shiki/issues/3#issuecomment-830564854
         counter-reset: step;
 	    counter-increment: step calc(var(--start, 1) - 1);
 
@@ -14,8 +15,11 @@
             margin-right: 1rem;
             display: inline-block;
             text-align: right;
-            color: var(--bp-shiki-comments);
+            color: $shiki-line-numbers;
         }
-        // End Line Numbers
     }
+}
+
+[data-bp-shiki="css-variables"] pre code .line:before {
+    color: var(--shiki-token-comment);
 }

@@ -1,5 +1,5 @@
 (() => {
-    const themeToggles = document.querySelectorAll('.theme-toggle');
+    const themeToggles = document.querySelectorAll('.theme-toggle')! as NodeListOf<HTMLInputElement>;
 
     if (themeToggles) {
         // Set value for all toggles
@@ -29,12 +29,12 @@
                 // setAdditionalData(themePrefers);
             };
 
-            setToggle(root.getAttribute('data-user-color-scheme'));
+            setToggle(root.getAttribute('data-bs-theme'));
 
             const setTheme = () => {
                 const themePrefers = themeToggle.checked ? 'dark' : 'light';
 
-                root.setAttribute('data-user-color-scheme', themePrefers);
+                root.setAttribute('data-bs-theme', themePrefers);
                 // setAdditionalData(themePrefers);
             };
 

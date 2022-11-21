@@ -1,0 +1,89 @@
+// Color system
+$color-contrast-dark:  #000;
+$color-contrast-light: #fff;
+
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #e9eaeb;
+$gray-200: #d4d5d8;
+$gray-300: #a9abb1;
+$gray-400: #696c77;
+$gray-500: #535664;
+$gray-600: #3e4251;
+$gray-700: #292D3E; // shiki background
+$gray-800: #202431;
+$gray-900: #14161f;
+$black:    #000;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue:    #2979FF;
+$indigo:  #5C6BC0;
+$purple:  #AB47BC;
+$pink:    #FF4081;
+$red:     #F44336;
+$orange:  #FF7042;
+$yellow:  #FFA000;
+$green:   #388E3C;
+$teal:    #80CBC4;
+$cyan:    #00BCD4;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $blue;
+$success:       $green;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-700;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-color-contrast-variables
+$primary-contrast:       color-contrast($primary);
+$success-contrast:       color-contrast($success);
+$danger-contrast:        color-contrast($danger);
+// scss-docs-end theme-color-contrast-variables
+
+// scss-docs-start color-variables-dark
+$blue-dark:    #82aaff;
+$indigo-dark:  #c792ea;
+$purple-dark:  #bb80b3;
+$pink-dark:    #ff9cac;
+$red-dark:     #f07178;
+$orange-dark:  #f78c6c;
+$yellow-dark:  #FFCB6B;
+$green-dark:   #c3e88d;
+$teal-dark:    #80CBC4;
+$cyan-dark:    #89ddff;
+// scss-docs-end color-variables-dark
+
+// scss-docs-start theme-color-dark-variables
+$primary-dark:       $blue-dark;
+$secondary-dark:     $gray-500;
+$success-dark:       $green-dark;
+$info-dark:          $cyan-dark;
+$warning-dark:       $yellow-dark;
+$danger-dark:        $red-dark;
+// scss-docs-end theme-color-dark-variables
+
+// scss-docs-start theme-color-dark-contrast-variables
+$primary-dark-contrast:       color-contrast($primary-dark);
+$success-dark-contrast:       color-contrast($success-dark);
+$danger-dark-contrast:        color-contrast($danger-dark);
+// scss-docs-end theme-color-dark-contrast-variables
+
+// Only applied if using a defined Shiki theme
+$shiki-line-numbers:                #6272A4;
+
+// Only applied if using the "css-variables" Shiki theme
+$shiki-color-text:                  var(--#{$custom-prefix}base02);
+$shiki-color-background:            var(--#{$custom-prefix}base00);
+$shiki-token-constant:              var(--#{$prefix}blue);
+$shiki-token-string:                var(--#{$prefix}purple);
+$shiki-token-comment:               var(--#{$custom-prefix}base03);
+$shiki-token-keyword:               var(--#{$prefix}green);
+$shiki-token-parameter:             var(--#{$prefix}cyan);
+$shiki-token-function:              var(--#{$prefix}yellow);
+$shiki-token-string-expression:     var(--#{$prefix}orange);
+$shiki-token-punctuation:           var(--#{$prefix}cyan);
+$shiki-token-link:                  var(--#{$prefix}primary);
+$shiki-token-line-numbers:          var(--#{$custom-prefix}base02);

@@ -1,0 +1,5 @@
+[data-bs-theme="dark"] {
+    .navbar {
+        --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-dark-toggler-icon-bg)};
+    }
+}

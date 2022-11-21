@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/bootstrap-pretty/bootstrap-pretty#readme",
   "scripts": {
-    "bundle": "echo \"🚀 Cleaning dist folder...\" && del-cli --force ./dist && echo \"🚀 Generating minified JS and CSS...\" && (sass --load-path=node_modules --style=compressed --no-source-map ./scss/palettes/vscode:./dist/css/palettes & rollup --config) && echo \"🚀 Updating file names...\" && node ./bundle.js && echo \"🚀 Generating unminified CSS...\" && sass --load-path=node_modules --no-source-map ./scss/palettes/vscode:./dist/css/palettes && echo \"✨ Bundling complete!\""
+    "bundle": "echo \"🚀 Cleaning dist folder...\" && del-cli --force ./dist && echo \"🚀 Generating JS...\" && rollup --config && echo \"🚀 Copying palette SCSS into folders...\" && node copy-palettes.js && echo \"🚀 Generating minified CSS...\" && sass --load-path=node_modules --style=compressed --no-source-map ./scss/palettes:./dist/css/palettes && echo \"🚀 Updating file names...\" && node ./bundle.js && echo \"🚀 Generating unminified CSS...\" && sass --load-path=node_modules --no-source-map ./scss/palettes:./dist/css/palettes && echo \"✨ Bundling complete!\"",
+    "server": "http-server ./ -c-1"
   },
   "dependencies": {
     "bootstrap": "^5.2.2"
@@ -23,10 +24,14 @@
     "@popperjs/core": "*"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^10.0.1",
     "del-cli": "^5.0.0",
     "glob": "^8.0.3",
+    "http-server": "^14.1.1",
     "rollup": "^3.2.5",
     "rollup-plugin-terser": "^7.0.2",
-    "sass": "1.55.0"
+    "sass": "1.55.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
   }
 }

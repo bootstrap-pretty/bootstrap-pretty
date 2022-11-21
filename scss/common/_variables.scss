@@ -1,0 +1,163 @@
+// Config
+$enable-negative-margins:          true;
+$filter-invert:                     invert(1) grayscale(100%) brightness(200%);
+
+// Main
+$body-color:                        $gray-900;
+$body-color-dark:                   $gray-100;
+$body-bg:                           $gray-100;
+$body-bg-dark:                      $gray-800;
+$component-active-color:            var(--#{$prefix}primary-contrast);
+
+// Type
+$hr-color:                          var(--#{$custom-prefix}base03);
+$text-muted:                        var(--#{$custom-prefix}base02);
+$mark-bg:                           var(--#{$prefix}yellow);
+
+// Borders
+$border-color:                      var(--#{$custom-prefix}base03);
+$border-color-translucent:          var(--#{$custom-prefix}base03);
+
+// Accordion
+$accordion-color:                   var(--#{$prefix}body-color);
+$accordion-bg:                      var(--#{$prefix}body-bg);
+$accordion-border-color:            $border-color;
+$accordion-button-active-bg:        rgba(var(--#{$prefix}primary-rgb), .3);
+$accordion-button-active-color:     var(--#{$prefix}body-color);
+$accordion-icon-color:              var(--#{$prefix}gray-900);
+$accordion-icon-active-color:       var(--#{$prefix}gray-900);
+
+// Alerts
+$alert-bg-scale:                    .3;
+
+// Breadcrumbs
+$breadcrumb-divider-color:          var(--#{$prefix}body-color);
+$breadcrumb-active-color:           var(--#{$custom-prefix}base02);
+
+// Code
+$code-color:                        var(--#{$prefix}pink);
+
+// Dropdowns
+$dropdown-color:                    var(--#{$prefix}body-color);
+$dropdown-bg:                       var(--#{$prefix}body-bg);
+$dropdown-link-color:               var(--#{$prefix}body-color);
+$dropdown-link-hover-color:         var(--#{$prefix}body-color);
+$dropdown-link-hover-bg:            var(--#{$custom-prefix}base00);
+$dropdown-link-disabled-color:      var(--#{$custom-prefix}base02);
+$dropdown-header-color:             var(--#{$prefix}body-color);
+
+// Cards
+$card-bg:                           var(--#{$prefix}body-bg);
+
+// List Group
+$list-group-color:                  var(--#{$prefix}body-color);
+$list-group-bg:                     var(--#{$prefix}body-bg);
+$list-group-border-color:           $border-color;
+$list-group-item-bg-scale:          .3;
+$list-group-hover-bg:               var(--#{$custom-prefix}base00);
+$list-group-active-color:           var(--#{$prefix}gray-900);
+$list-group-disabled-color:         var(--#{$custom-prefix}base02);
+$list-group-action-color:           var(--#{$prefix}body-color);
+$list-group-action-active-color:    var(--#{$prefix}body-color);
+$list-group-action-active-bg:       var(--#{$custom-prefix}base00);
+
+// Modal
+$modal-content-bg:                  var(--#{$prefix}body-bg);
+
+// Navs
+$nav-link-disabled-color:           var(--#{$custom-prefix}base02);
+$nav-tabs-border-color:             $border-color;
+$nav-tabs-link-hover-border-color:  $border-color;
+$nav-tabs-link-active-color:        var(--#{$prefix}body-color);
+$nav-tabs-link-active-bg:           var(--#{$prefix}body-bg);
+$nav-tabs-link-active-border-color: $border-color $border-color $nav-tabs-link-active-bg;
+$nav-pills-link-active-bg:          var(--#{$prefix}primary);
+
+// Navbar
+$navbar-light-color:                var(--#{$custom-prefix}base02);
+$navbar-light-hover-color:          var(--#{$prefix}body-color);
+$navbar-light-disabled-color:       var(--#{$custom-prefix}base02);
+$navbar-light-active-color:         var(--#{$prefix}body-color);
+
+// Pagination
+$pagination-bg:                     var(--#{$prefix}body-bg);
+$pagination-border-color:           $border-color;
+$pagination-focus-bg:               var(--#{$custom-prefix}base00);
+$pagination-hover-bg:               var(--#{$custom-prefix}base00);
+$pagination-hover-border-color:     $border-color;
+$pagination-active-bg:              var(--#{$prefix}primary);
+$pagination-disabled-color:         var(--#{$custom-prefix}base02);
+$pagination-disabled-bg:            var(--#{$prefix}body-bg);
+$pagination-disabled-border-color:  $border-color;
+
+// Popovers
+$popover-bg:                        var(--#{$prefix}body-bg);
+$popover-header-bg:                 var(--#{$prefix}body-bg);
+$popover-header-color:              var(--#{$prefix}body-color);
+$popover-body-color:                var(--#{$prefix}body-color);
+
+// Progress
+$progress-bg:                       var(--#{$custom-prefix}base00);
+
+// Toast
+$toast-background-color:            rgba(var(--#{$prefix}body-bg-rgb), .85);
+$toast-header-color:                var(--#{$prefix}body-color);
+$toast-header-background-color:     rgba(var(--#{$prefix}body-bg-rgb), .85);
+$toast-header-border-color:         $border-color;
+
+// Tooltip
+$tooltip-bg:                        var(--#{$prefix}primary);
+$tooltip-color:                     var(--#{$prefix}primary-contrast);
+
+// Figures
+$figure-caption-color:              var(--#{$custom-prefix}base02);
+
+// Forms
+$input-bg:                          var(--#{$prefix}body-bg);
+$input-disabled-bg:                 var(--#{$custom-prefix}base00);
+
+$input-color:                       var(--#{$prefix}body-color);
+$input-border-color:                $border-color;
+
+$input-placeholder-color:           var(--#{$custom-prefix}base02);
+$input-plaintext-color:             var(--#{$prefix}body-color);
+
+$input-group-addon-color:           var(--#{$prefix}body-color);
+$input-group-addon-bg:              var(--#{$custom-prefix}base00);
+
+$form-file-button-color:            var(--#{$prefix}body-color);
+$form-file-button-bg:               $input-group-addon-bg;
+$form-file-button-hover-bg:         var(--#{$custom-prefix}base01);
+
+$form-check-input-border:           1px solid $border-color;
+$form-check-input-checked-bg-color: var(--#{$prefix}primary);
+
+$form-select-disabled-color:        var(--#{$custom-prefix}base02);
+$form-select-disabled-bg:           var(--#{$custom-prefix}base00);
+$form-select-indicator-dark:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$gray-100}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+
+$form-range-track-bg:                       var(--#{$custom-prefix}base01);
+$form-range-thumb-bg:                       var(--#{$prefix}primary);
+$form-range-thumb-active-bg:                var(--#{$prefix}primary-shift);
+$form-range-thumb-disabled-bg:              var(--#{$custom-prefix}base01);
+
+$form-check-input-checked-bg-image:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary-contrast}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-input-checked-bg-image-dark:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary-dark-contrast}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+
+$form-check-radio-checked-bg-image:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$primary-contrast}'/></svg>");
+$form-check-radio-checked-bg-image-dark:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$primary-dark-contrast}'/></svg>");
+
+$form-check-input-indeterminate-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary-contrast}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
+$form-check-input-indeterminate-bg-image-dark:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary-dark-contrast}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
+
+$form-switch-bg-image:                          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{rgba($body-color, .25)}'/></svg>");
+$form-switch-bg-image-dark:                     url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{rgba($body-color-dark, .25)}'/></svg>");
+
+$form-switch-focus-bg-image:                    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{tint-color($primary, 50%)}'/></svg>");
+$form-switch-focus-bg-image-dark:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{tint-color($primary-dark, 50%)}'/></svg>");
+
+$form-switch-checked-bg-image:                  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$primary-contrast}'/></svg>");
+$form-switch-checked-bg-image-dark:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$primary-dark-contrast}'/></svg>");
+
+$form-feedback-icon-valid-dark:                 url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$success-dark}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
+$form-feedback-icon-invalid-dark:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$danger-dark}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$danger-dark}' stroke='none'/></svg>");
