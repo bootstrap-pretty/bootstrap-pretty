@@ -1,15 +1,7 @@
-:root[data-bs-theme="light"],
-:root[data-bs-theme="dark"] {
-    --#{$custom-prefix}shiki-line-numbers:      #{$shiki-line-numbers};
-}
-
 :root[data-bs-theme="light"] {
-    @each $color, $value in $base-colors {
-        // Base colors
-        --#{$custom-prefix}#{$color}: #{$value};
-
-        // Base colors contrast
-        --#{$custom-prefix}#{$color}-contrast: #{color-contrast($value, $color-contrast-dark: $body-color-dark, $color-contrast-light: $body-color)};
+    @each $color, $value in $body-colors {
+        // Body colors contrast
+        --#{$prefix}#{$color}-contrast: #{color-contrast($value, $color-contrast-dark: $body-color-dark, $color-contrast-light: $body-color)};
     }
 
     @each $color, $value in $colors {
@@ -27,19 +19,9 @@
 }
 
 :root[data-bs-theme="dark"] {
-    --#{$prefix}body-color:                 #{$body-color-dark};
-    --#{$prefix}body-color-rgb:             #{to-rgb($body-color-dark)};
-    --#{$prefix}body-bg:                    #{$body-bg-dark};
-    --#{$prefix}body-bg-rgb:                #{to-rgb($body-bg-dark)};
-    --#{$prefix}link-color:                 #{$primary-dark};
-    --#{$prefix}link-hover-color:           #{shift-color($primary-dark, $link-shade-percentage)};
-
-    @each $color, $value in $base-colors-dark {
-        // Base colors dark
-        --#{$custom-prefix}#{$color}: #{$value};
-
-        // Base colors dark contrast
-        --#{$custom-prefix}#{$color}-contrast: #{color-contrast($value, $color-contrast-dark: $body-color-dark, $color-contrast-light: $body-color)};
+    @each $color, $value in $body-colors-dark {
+        // Body colors dark contrast
+        --#{$prefix}#{$color}-contrast: #{color-contrast($value, $color-contrast-dark: $body-color-dark, $color-contrast-light: $body-color)};
     }
 
     @each $color, $value in $colors-dark {

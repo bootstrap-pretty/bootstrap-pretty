@@ -1,20 +1,5 @@
-@each $state, $value in $theme-colors {
+@each $state in map-keys($theme-colors) {
     .list-group-item-#{$state} {
-        color: var(--#{$prefix}body-color);
-        background-color: #{rgba(var(--#{$prefix}#{$state}-rgb), $list-group-item-bg-scale)};
-    
-        &.list-group-item-action {
-            &:hover,
-            &:focus {
-                color: var(--#{$prefix}body-color);
-                background-color: #{rgba(var(--#{$prefix}#{$state}-rgb), calc($list-group-item-bg-scale + .1))};
-            }
-    
-            &.active {
-                color: var(--#{$prefix}#{$state}-contrast);
-                background-color: var(--#{$prefix}#{$state});
-                border-color: var(--#{$prefix}#{$state});
-            }
-        }
+        --#{$prefix}list-group-color: var(--#{$prefix}body-color);
     }
 }

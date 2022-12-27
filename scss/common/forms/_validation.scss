@@ -1,107 +1,51 @@
 @each $state, $data in $form-validation-states {
     @if $state == "valid" {
-        .#{$state}-feedback {
-            color: var(--#{$prefix}success);
-        }
-        
         .#{$state}-tooltip {
             color: var(--#{$prefix}success-contrast);
-            background-color: var(--#{$prefix}success);
         }
 
-        .form-control {
-            @include form-validation-state-selector($state) {
-                border-color: var(--#{$prefix}success);
-        
-                &:focus {
-                    border-color: var(--#{$prefix}success);
-                }
-            }
-        }
-
-        [data-bs-theme="dark"] {
-            .form-control {
-                @include form-validation-state-selector($state) {
+        @if $enable-dark-mode {
+            @include color-mode(dark) {
+                .form-control.is-valid,
+                .was-validated .form-control:valid {
                     @if $enable-validation-icons {
                         background-image: escape-svg($form-feedback-icon-valid-dark);
                     }
                 }
-            }
-        }
 
-        .form-select {
-            @include form-validation-state-selector($state) {
-                border-color: var(--#{$prefix}success);
-        
-                &:focus {
-                    border-color: var(--#{$prefix}success);
-                }
-            }
-        }
-
-        .form-check-input {
-            @include form-validation-state-selector($state) {
-                border-color: var(--#{$prefix}success);
-        
-                &:checked {
-                    background-color: var(--#{$prefix}success);
-                }
-        
-                ~ .form-check-label {
-                    color: var(--#{$prefix}success);
-                }
-            }
-        }
-    } @else if $state == "invalid" {
-        .#{$state}-feedback {
-            color: var(--#{$prefix}danger);
-        }
-        
-        .#{$state}-tooltip {
-            color: var(--#{$prefix}danger-contrast);
-            background-color: var(--#{$prefix}danger);
-        }
-
-        .form-control {
-            @include form-validation-state-selector($state) {
-                border-color: var(--#{$prefix}danger);
-        
-                &:focus {
-                    border-color: var(--#{$prefix}danger);
-                }
-            }
-        }
-
-        [data-bs-theme="dark"] {
-            .form-control {
-                @include form-validation-state-selector($state) {
+                .form-select.is-valid,
+                .was-validated .form-select:valid {
                     @if $enable-validation-icons {
-                        background-image: escape-svg($form-feedback-icon-invalid-dark);
+                        &:not([multiple]):not([size]),
+                        &:not([multiple])[size="1"] {
+                            --#{$prefix}form-select-bg-icon: #{escape-svg($form-feedback-icon-valid-dark)};
+                        }
                     }
                 }
             }
         }
-
-        .form-select {
-            @include form-validation-state-selector($state) {
-                border-color: var(--#{$prefix}danger);
-        
-                &:focus {
-                    border-color: var(--#{$prefix}danger);
-                }
-            }
+    } @else if $state == "invalid" {
+        .#{$state}-tooltip {
+            color: var(--#{$prefix}danger-contrast);
         }
 
-        .form-check-input {
-            @include form-validation-state-selector($state) {
-                border-color: var(--#{$prefix}danger);
-        
-                &:checked {
-                    background-color: var(--#{$prefix}danger);
+        @if $enable-dark-mode {
+            @include color-mode(dark) {
+                .form-control.is-invalid,
+                .was-validated .form-control:invalid {
+                    @if $enable-validation-icons {
+                        background-image: escape-svg($form-feedback-icon-invalid-dark);
+                    }
                 }
-        
-                ~ .form-check-label {
-                    color: var(--#{$prefix}danger);
+
+                .form-select.is-invalid,
+                .was-validated .form-select:invalid {
+                    @if $enable-validation-icons {
+                        &:not([multiple]):not([size]),
+                        &:not([multiple])[size="1"] {
+                            --#{$prefix}form-select-bg-icon: #{escape-svg($form-feedback-icon-invalid-dark)};
+                        }
+                    }
                 }
             }
         }

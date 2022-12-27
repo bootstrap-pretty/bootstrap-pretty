@@ -1,9 +1,3 @@
-[data-bs-theme="dark"] {
-    .btn-close {
-        filter: $filter-invert;
-    }
-}
-
 @each $color, $value in $theme-colors {
     .btn-#{$color} {
         --#{$prefix}btn-color: var(--#{$prefix}#{$color}-contrast);

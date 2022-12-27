@@ -1,19 +1,23 @@
-[data-bs-theme="light"] {
-    .theme-light {
-        display: block;
-    }
+@if $enable-dark-mode {
+    @include color-mode(light) {
+        .theme-light {
+            display: block;
+        }
 
-    .theme-dark {
-        display: none;
+        .theme-dark {
+            display: none;
+        }
     }
 }
 
-[data-bs-theme="dark"] {
-    .theme-light {
-        display: none;
-    }
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        .theme-light {
+            display: none;
+        }
 
-    .theme-dark {
-        display: block;
+        .theme-dark {
+            display: block;
+        }
     }
 }

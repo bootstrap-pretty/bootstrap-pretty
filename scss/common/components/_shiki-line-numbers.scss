@@ -1,7 +1,7 @@
 // https://github.com/shikijs/shiki/issues/3#issuecomment-830564854
 pre {
     padding: .5rem 0;
-    border: 1px solid var(--#{$custom-prefix}base03);
+    border: 1px solid var(--#{$prefix}border-color-translucent);
     border-radius: $border-radius;
     
     code {

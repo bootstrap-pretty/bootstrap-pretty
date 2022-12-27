@@ -4,15 +4,15 @@ $color-contrast-light: #fff;
 
 // scss-docs-start gray-color-variables
 $white:    #fff;
-$gray-100: #e9eaeb;
+$gray-100: #eaeaec;
 $gray-200: #d4d5d8;
-$gray-300: #a9abb1;
-$gray-400: #696c77;
-$gray-500: #535664;
-$gray-600: #3e4251;
-$gray-700: #292D3E; // shiki background
-$gray-800: #202431;
-$gray-900: #14161f;
+$gray-300: #bfc0c5;
+$gray-400: #a9abb2;
+$gray-500: #696c78;
+$gray-600: #545765;
+$gray-700: #3e4251;
+$gray-800: #292D3E; // syntax highlight background
+$gray-900: #212432;
 $black:    #000;
 // scss-docs-end gray-color-variables
 
@@ -31,10 +31,13 @@ $cyan:    #00BCD4;
 
 // scss-docs-start theme-color-variables
 $primary:       $blue;
+$secondary:     $gray-600;
 $success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
 $danger:        $red;
 $light:         $gray-200;
-$dark:          $gray-700;
+$dark:          $gray-900;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-color-contrast-variables
@@ -75,15 +78,15 @@ $danger-dark-contrast:        color-contrast($danger-dark);
 $shiki-line-numbers:                #6272A4;
 
 // Only applied if using the "css-variables" Shiki theme
-$shiki-color-text:                  var(--#{$custom-prefix}base02);
-$shiki-color-background:            var(--#{$custom-prefix}base00);
+$shiki-color-text:                  var(--#{$prefix}secondary-color);
+$shiki-color-background:            var(--#{$prefix}tertiary-bg);
 $shiki-token-constant:              var(--#{$prefix}blue);
 $shiki-token-string:                var(--#{$prefix}purple);
-$shiki-token-comment:               var(--#{$custom-prefix}base03);
+$shiki-token-comment:               var(--#{$prefix}secondary-color);
 $shiki-token-keyword:               var(--#{$prefix}green);
 $shiki-token-parameter:             var(--#{$prefix}cyan);
 $shiki-token-function:              var(--#{$prefix}yellow);
 $shiki-token-string-expression:     var(--#{$prefix}orange);
 $shiki-token-punctuation:           var(--#{$prefix}cyan);
 $shiki-token-link:                  var(--#{$prefix}primary);
-$shiki-token-line-numbers:          var(--#{$custom-prefix}base02);
+$shiki-token-line-numbers:          var(--#{$prefix}secondary-color);

@@ -1,15 +1,6 @@
-.alert {
-    --#{$prefix}alert-color: inherit;
-}
-
-@each $state, $value in $theme-colors {
+@each $state in map-keys($theme-colors) {
     .alert-#{$state} {
-        --#{$prefix}alert-bg: #{rgba(var(--#{$prefix}#{$state}-rgb), $alert-bg-scale)};
-        --#{$prefix}alert-border-color: var(--#{$prefix}#{$state});
-        --#{$prefix}alert-border: #{$alert-border-width} solid var(--#{$prefix}alert-border-color);
-
-        .alert-link {
-            color: var(--#{$prefix}body-color);
-        }
+        --#{$prefix}alert-color: var(--#{$prefix}body-color);
+        --#{$prefix}alert-link-color: var(--#{$prefix}body-color);
     }
 }

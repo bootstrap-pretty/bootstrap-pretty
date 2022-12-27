@@ -1,5 +1,7 @@
-[data-bs-theme="dark"] {
-    .navbar {
-        --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-dark-toggler-icon-bg)};
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        .navbar {
+            --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-dark-toggler-icon-bg)};
+        }
     }
 }

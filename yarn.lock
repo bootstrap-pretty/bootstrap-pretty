@@ -360,7 +360,7 @@ __metadata:
   resolution: "bootstrap-pretty@workspace:."
   dependencies:
     "@rollup/plugin-typescript": ^10.0.1
-    bootstrap: ^5.2.2
+    bootstrap: 5.3.0-alpha1
     del-cli: ^5.0.0
     glob: ^8.0.3
     http-server: ^14.1.1
@@ -374,12 +374,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"bootstrap@npm:^5.2.2":
-  version: 5.2.2
-  resolution: "bootstrap@npm:5.2.2"
+"bootstrap@npm:5.3.0-alpha1":
+  version: 5.3.0-alpha1
+  resolution: "bootstrap@npm:5.3.0-alpha1"
   peerDependencies:
     "@popperjs/core": ^2.11.6
-  checksum: 14e6df28feb975dc10702cac0a6c2a21132a6e4e5562e31cdae1db3970e287ed29001020066b61d96b2cea2a45ecf44c08c8c26bc84a31cdeabec0a9be6b9389
+  checksum: 600d69d570124c29fec32b5ae1478fa38c97b7e6cbb155d4d89495164968e40090c70fbbf83ff42cb2765b4273784c397e8e561fb3aacf8b36941a9c5648c8d4
   languageName: node
   linkType: hard
 

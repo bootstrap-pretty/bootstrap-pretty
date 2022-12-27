@@ -7,12 +7,12 @@ $white:    #fff;
 $gray-100: #eaeaeb;
 $gray-200: #d4d4d7;
 $gray-300: #bfbfc3;
-$gray-400: #696a72;
-$gray-500: #53555e;
-$gray-600: #3e3f4a;
-$gray-700: #282A36; // shiki background
-$gray-800: #20222b;
-$gray-900: #181920;
+$gray-400: #a9aaaf;
+$gray-500: #696a72;
+$gray-600: #53555e;
+$gray-700: #3e3f4a;
+$gray-800: #282A36; // syntax highlight background
+$gray-900: #20222b;
 $black:    #000;
 // scss-docs-end gray-color-variables
 
@@ -31,10 +31,13 @@ $cyan:    #005f60;
 
 // scss-docs-start theme-color-variables
 $primary:       $purple;
+$secondary:     $gray-600;
 $success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
 $danger:        $red;
 $light:         $gray-200;
-$dark:          $gray-700;
+$dark:          $gray-900;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-color-contrast-variables
@@ -76,15 +79,15 @@ $danger-dark-contrast:        color-contrast($danger-dark);
 $shiki-line-numbers:                #6272A4;
 
 // Only applied if using the "css-variables" Shiki theme
-$shiki-color-text:                  var(--#{$custom-prefix}base02);
-$shiki-color-background:            var(--#{$custom-prefix}base00);
+$shiki-color-text:                  var(--#{$prefix}secondary-color);
+$shiki-color-background:            var(--#{$prefix}tertiary-bg);
 $shiki-token-constant:              var(--#{$prefix}blue);
 $shiki-token-string:                var(--#{$prefix}purple);
-$shiki-token-comment:               var(--#{$custom-prefix}base03);
+$shiki-token-comment:               var(--#{$prefix}tertiary-color);
 $shiki-token-keyword:               var(--#{$prefix}green);
 $shiki-token-parameter:             var(--#{$prefix}cyan);
 $shiki-token-function:              var(--#{$prefix}yellow);
 $shiki-token-string-expression:     var(--#{$prefix}orange);
 $shiki-token-punctuation:           var(--#{$prefix}cyan);
 $shiki-token-link:                  var(--#{$prefix}primary);
-$shiki-token-line-numbers:          var(--#{$custom-prefix}base02);
+$shiki-token-line-numbers:          var(--#{$prefix}tertiary-color);
