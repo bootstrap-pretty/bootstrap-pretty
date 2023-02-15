@@ -1,5 +1,5 @@
 /*!
-    * Bootstrap Pretty 0.2.0 (https://github.com/bootstrap-pretty/bootstrap-pretty#readme)
+    * Bootstrap Pretty 0.2.1 (https://github.com/bootstrap-pretty/bootstrap-pretty#readme)
     * Based on Bootstrap 5.3.0-alpha1 (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
     * Copyright 2011-2023 Bootstrap (https://getbootstrap.com)
     * Copyright 2023 Bootstrap Pretty (https://bootstrappretty.dev)
@@ -4424,7 +4424,7 @@ defineJQueryPlugin(Toast);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap Pretty (0.2.0): copy-code-snippet.js
+ * Bootstrap Pretty (0.2.1): copy-code-snippet.js
  * Licensed under Apache-2.0 (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */

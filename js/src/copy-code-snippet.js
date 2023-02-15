@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap Pretty (0.2.0): copy-code-snippet.js
+ * Bootstrap Pretty (0.2.1): copy-code-snippet.js
  * Licensed under Apache-2.0 (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */

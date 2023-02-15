@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap Pretty (0.2.0): index.esm.js
+ * Bootstrap Pretty (0.2.1): index.esm.js
  * Licensed under Apache-2.0 (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
