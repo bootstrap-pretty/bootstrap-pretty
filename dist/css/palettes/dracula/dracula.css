@@ -13456,6 +13456,11 @@ mark, .mark {
   color: var(--bs-copy-code-snippet-color);
   white-space: nowrap;
   font-size: var(--bs-copy-code-snippet-font-size);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.bp-copy-code-snippet .bp-copy-code-snippet-text::-webkit-scrollbar {
+  display: none;
 }
 .bp-copy-code-snippet .bp-copy-code-snippet-trigger {
   --bs-btn-border-width: 0;

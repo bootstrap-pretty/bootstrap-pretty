@@ -46,6 +46,12 @@
         color: var(--#{$prefix}copy-code-snippet-color);
         white-space: nowrap;
         @include font-size(var(--#{$prefix}copy-code-snippet-font-size));
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
     }
 
     .bp-copy-code-snippet-trigger {
