@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*!
- * Bootstrap Pretty 0.2.1 (https://github.com/bootstrap-pretty/bootstrap-pretty#readme)
+ * Bootstrap Pretty 0.2.2 (https://github.com/bootstrap-pretty/bootstrap-pretty#readme)
  * Copyright 2023 Bootstrap Pretty (https://bootstrappretty.dev)
  * Licensed under MIT (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
  */
