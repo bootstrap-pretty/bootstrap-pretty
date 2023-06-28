@@ -2,6 +2,19 @@
     background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
 }
 
+.progress,
+.progress-stacked {
+    // scss-docs-start progress-css-vars
+    --#{$prefix}progress-bar-border: #{$progress-bar-border};
+    // scss-docs-end progress-css-vars
+
+    border: var(--#{$prefix}progress-bar-border);
+}
+
+.progress-stacked > .progress {
+    border: 0;
+}
+
 @if $enable-dark-mode {
     @include color-mode(dark) {
         .progress-bar-striped {

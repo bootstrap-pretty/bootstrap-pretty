@@ -20,5 +20,16 @@
         "tags": ["featured", "blue", "vscode"],
         "playwrightCategory": "palettes",
         "shiki": "material-palenight"
+    },
+    {
+        "slug": "palettes/synthax",
+        "palette": "synthax",
+        "title": "Synthax",
+        "description": "A Bootstrap Pretty palette based on the Synthax VS Code theme.",
+        "modes": ["light", "dark"],
+        "defaultMode": "dark",
+        "tags": ["featured", "purple", "vscode"],
+        "playwrightCategory": "palettes",
+        "shiki": "synthax"
     }
 ]

@@ -1,0 +1,93 @@
+// Color system
+$color-contrast-dark:  #000;
+$color-contrast-light: #fff;
+
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #f7f2ff;
+$gray-200: #decbff;
+$gray-300: #c5a4ff;
+$gray-400: #ad7cff;
+$gray-500: #9455ff;
+$gray-600: #4b00cb;
+$gray-700: #2e007c;
+$gray-800: #11002e; // syntax highlight background
+$gray-900: #030007;
+$black:    #000;
+
+// $white:    #fff;
+// $gray-100: #F4F4F4;
+// $gray-200: #D6D6D6;
+// $gray-300: #B7B7B7;
+// $gray-400: #999999;
+// $gray-500: #9455ff;
+// $gray-600: #4b00cb;
+// $gray-700: #2e007c;
+// $gray-800: #11002e; // syntax highlight background
+// $gray-900: #030007;
+// $black:    #000;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables-dark
+$blue-dark:         #6796e6;
+$indigo-dark:       #c884ff;
+$purple-dark:       #d0b7ff;
+$pink-dark:         #d65cd3;
+$red-dark:          #D40078;
+$orange-dark:       #e08c26;
+$yellow-dark:       #F9C80E;
+$green-dark:        #21ce97;
+$teal-dark:         #4c97b2;
+$cyan-dark:         #00fbff;
+// scss-docs-end color-variables-dark
+
+// scss-docs-start theme-color-dark-variables
+$primary-dark:       $purple-dark;
+$secondary-dark:     $gray-500;
+$success-dark:       $green-dark;
+$info-dark:          $cyan-dark;
+$warning-dark:       $yellow-dark;
+$danger-dark:        $red-dark;
+// scss-docs-end theme-color-dark-variables
+
+// scss-docs-start color-variables
+$blue:         shade-color($blue-dark, 20%);
+$indigo:       shade-color($indigo-dark, 20%);
+$purple:       #4210a7;
+$pink:         shade-color($pink-dark, 20%);
+$red:          shade-color($red-dark, 20%);
+$orange:       shade-color($orange-dark, 20%);
+$yellow:       shade-color($yellow-dark, 20%);
+$green:        shade-color($green-dark, 20%);
+$teal:         shade-color($teal-dark, 20%);
+$cyan:         shade-color($cyan-dark, 20%);
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $purple;
+$secondary:     $indigo;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-900;
+// scss-docs-end theme-color-variables
+
+// Shiki
+// Only applied if using a defined Shiki theme
+$shiki-line-numbers:                $purple-dark;
+
+// Only applied if using the "css-variables" Shiki theme
+$shiki-color-text:                  var(--#{$prefix}secondary-color);
+$shiki-color-background:            var(--#{$prefix}tertiary-bg);
+$shiki-token-constant:              var(--#{$prefix}blue);
+$shiki-token-string:                var(--#{$prefix}purple);
+$shiki-token-comment:               var(--#{$prefix}purple);
+$shiki-token-keyword:               var(--#{$prefix}green);
+$shiki-token-parameter:             var(--#{$prefix}cyan);
+$shiki-token-function:              var(--#{$prefix}yellow);
+$shiki-token-string-expression:     var(--#{$prefix}orange);
+$shiki-token-punctuation:           var(--#{$prefix}cyan);
+$shiki-token-link:                  var(--#{$prefix}primary);
+$shiki-token-line-numbers:          var(--#{$prefix}purple);

@@ -93,6 +93,7 @@
     "scss/**/**/*.scss",
     "!scss/tests/**",
     "!scss/templates/**",
-    "components/**/*.{html,astro}"
+    "components/**/*.{html,astro}",
+    "shiki-themes/*.json"
   ]
 }

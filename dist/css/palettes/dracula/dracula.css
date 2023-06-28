@@ -334,10 +334,10 @@ body {
 
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: var(--bs-border-color);
   border: 0;
   border-top: var(--bs-border-width) solid;
-  opacity: 0.25;
+  opacity: 0.5;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -2667,7 +2667,7 @@ progress {
   width: 1px;
   min-height: 1em;
   background-color: currentcolor;
-  opacity: 0.25;
+  opacity: 0.5;
 }
 
 .table {
@@ -13507,6 +13507,16 @@ mark, .mark {
 
 [data-bs-theme=dark] .navbar {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.progress,
+.progress-stacked {
+  --bs-progress-bar-border: ;
+  border: var(--bs-progress-bar-border);
+}
+
+.progress-stacked > .progress {
+  border: 0;
 }
 
 [data-bs-theme=dark] .progress-bar-striped {
